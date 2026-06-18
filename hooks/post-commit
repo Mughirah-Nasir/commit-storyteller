@@ -1,0 +1,10 @@
+#!/bin/sh
+# commit-storyteller :: post-commit hook (alternative to prepare-commit-msg)
+#
+# Reference copy for manual installation when the package is installed or
+# linked in your repo. For zero-setup installation, run
+# `node /path/to/commit-storyteller/src/cli.js install post-commit` instead.
+#
+# Commits first, then amends the message with a generated one. `|| true` keeps
+# a hook failure from interfering with your workflow.
+npx storyteller post-commit || true

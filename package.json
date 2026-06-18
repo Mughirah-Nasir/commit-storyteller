@@ -1,0 +1,55 @@
+{
+  "name": "commit-storyteller",
+  "version": "1.0.0",
+  "description": "A git hook that turns your staged diff into a clean, reviewable commit message -- with a deterministic offline engine so it works with no API key at all.",
+  "type": "module",
+  "bin": {
+    "storyteller": "src/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\" \"*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"test/**/*.js\" \"*.js\"",
+    "story": "node src/cli.js"
+  },
+  "keywords": [
+    "git",
+    "git-hooks",
+    "commit",
+    "commit-message",
+    "conventional-commits",
+    "llm",
+    "cli",
+    "developer-tools"
+  ],
+  "author": "Mughirah Nasir <mnasir.bee25seecs@seecs.edu.pk>",
+  "license": "MIT",
+  "homepage": "https://github.com/Mughirah-Nasir/commit-storyteller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mughirah-Nasir/commit-storyteller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mughirah-Nasir/commit-storyteller/issues"
+  },
+  "files": [
+    "src/",
+    "hooks/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.4"
+  }
+}

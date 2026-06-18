@@ -1,0 +1,13 @@
+#!/bin/sh
+# commit-storyteller :: prepare-commit-msg hook
+#
+# This is a reference copy for manual installation when the package is
+# installed or linked in your repo (npm install -D commit-storyteller).
+# For zero-setup installation that does NOT require the package to be linked,
+# run `node /path/to/commit-storyteller/src/cli.js install` instead, which
+# writes a hook that calls the CLI by absolute path.
+#
+# Fills an empty commit message with a generated one BEFORE your editor opens,
+# so you always review it. It never overwrites a message you typed with -m,
+# and the trailing `|| true` guarantees a hook failure can never block a commit.
+npx storyteller run "$1" "$2" "$3" || true

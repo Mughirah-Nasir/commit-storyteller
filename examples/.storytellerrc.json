@@ -1,0 +1,6 @@
+{
+  "provider": "offline",
+  "style": "conventional",
+  "hook": "prepare-commit-msg",
+  "fallbackToOffline": true
+}
