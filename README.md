@@ -170,3 +170,9 @@ This repository is intended to be easy to inspect and verify locally. After clon
 ## Documentation maintenance
 
 This repository is maintained as a small, reviewable public project. Setup steps, verification commands, limitations, and security notes should stay clear enough for someone to inspect the project quickly before running it.
+
+## Future improvements
+
+- Add more commit-message styles beyond conventional and prose.
+- Add better handling for very large diffs with grouped summaries.
+- Add optional project-specific rules for teams with custom commit standards.
